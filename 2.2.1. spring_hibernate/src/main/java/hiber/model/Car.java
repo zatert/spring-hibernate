@@ -13,8 +13,8 @@ public class Car {
 
     private int series;
 
-    @OneToOne(mappedBy = "car")
-    private User user;
+//    @OneToOne(mappedBy = "car")
+//    private User user;
 
     public Car() {
     }
@@ -50,6 +50,6 @@ public class Car {
 
     @Override
     public String toString() {
-        return "model = " + model + ", series= " + series + ", its owner " + user.getFirstName();
+        return "model = " + model + ", series= " + series + ", its owner ";//+ user.getFirstName();
     }
 }
